@@ -1,0 +1,20 @@
+<ion-grid>
+  <ion-row *ngFor="let noticias of noticias">
+    <ion-card>
+        <ion-header>
+
+          <ion-card-title>  
+            {{noticias.title}}
+          </ion-card-title>
+
+        </ion-header>
+
+        <ion-img [src]="noticias.urlToImage"> </ion-img>
+
+        <ion-card-content>
+         {{noticias.description}}
+        </ion-card-content>  
+
+    </ion-card>
+  </ion-row>
+</ion-grid>  
